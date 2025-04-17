@@ -5,14 +5,18 @@ const express = require('express');
 const app = express();
 
 // inizializzo la porta
-const port = 3000
+const port = 3000;
+
+// importo il router in una variabile
+const postsRouter = require('./routers/posts.js');
+
+// utilizzo postsRouter per creare le rotte
+app.use('/posts', postsRouter)
 
 // definisco rotta base
 app.get('/', (req, res)=>{
-    res.send()
+    res.send('I Post')
 })
-
-app.get()
 
 // metto in ascolto il server
 app.listen(port, () =>{
