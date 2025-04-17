@@ -12,6 +12,8 @@ app.get('/', (req, res)=>{
     res.send()
 })
 
+app.get()
+
 // metto in ascolto il server
 app.listen(port, () =>{
     console.log(`server in ascolto alla porta ${port}`)
