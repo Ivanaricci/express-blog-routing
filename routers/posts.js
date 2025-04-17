@@ -12,5 +12,10 @@ router.get('/', (req, res) => {
 
 // show
 router.get('/:id', (req,res) =>{
-    res.send(`Dettaglio della lista: ${req.params.id}`)
+    res.send(`Dettaglio del post: ${req.params.id}`)
+})
+
+// store
+router.post('/', (req,res) =>{
+    res.send('inserimento nuovo post')
 })
