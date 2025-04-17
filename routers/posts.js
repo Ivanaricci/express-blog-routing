@@ -19,3 +19,8 @@ router.get('/:id', (req,res) =>{
 router.post('/', (req,res) =>{
     res.send('inserimento nuovo post')
 })
+
+// update
+router.put('/:id', (req,res) => {
+    res.send(`Modifica totale del post ${req.params.id}`)
+})
