@@ -37,4 +37,4 @@ router.delete('/:id', (req,res) =>{
 })
 
 // esporto il router dei post
-module.export = router;
+module.exports = router;
