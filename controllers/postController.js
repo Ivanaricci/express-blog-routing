@@ -12,6 +12,8 @@ function show(req,res){
     const post = posts.find((post) =>{
         return post.id == id;
     } )
+
+    res.json(post)
     
 }
 
