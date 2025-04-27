@@ -19,3 +19,8 @@ function store(req,res){
 function update(req,res){
     res.send(`Modifica totale del post con id ${req.params.id} `)
 }
+
+// modify
+function modify(req,res){
+    res.send(`Modifica parziale del post con id ${req.params.id}`)
+}
