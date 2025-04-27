@@ -9,3 +9,8 @@ function index(req,res){
 function show(req,res){
     res.send(`Post con id ${req.params.id}`);
 }
+
+// store
+function store(req,res){
+    res.send('inserimento di un nuovo post');
+}
