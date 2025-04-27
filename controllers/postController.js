@@ -14,3 +14,8 @@ function show(req,res){
 function store(req,res){
     res.send('inserimento di un nuovo post');
 }
+
+// update
+function update(req,res){
+    res.send(`Modifica totale del post con id ${req.params.id} `)
+}
