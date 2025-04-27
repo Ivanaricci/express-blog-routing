@@ -24,3 +24,8 @@ function update(req,res){
 function modify(req,res){
     res.send(`Modifica parziale del post con id ${req.params.id}`)
 }
+
+// destroy
+function destroy(req,res){
+    res.send(`Cancellazione del post con id ${req.params.id}`)
+}
