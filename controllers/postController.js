@@ -2,7 +2,15 @@ const posts = require('../data/posts.js');
 
 // index
 function index(req,res){
-    res.json(posts);
+
+    const tag = req.query.tag;
+
+    let filteredPosts = posts;
+
+    if(tag){
+        filteredPosts = posts.filter(post => post.tags.includes(tag))
+    }
+    res.json(filteredPosts);
 }
 
 // show
@@ -12,6 +20,7 @@ function show(req,res){
     const post = posts.find((post) =>{
         return post.id == id;
     } )
+
 
     res.json(post)
     
